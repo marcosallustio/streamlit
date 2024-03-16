@@ -7,11 +7,11 @@ import matplotlib.pyplot as plt
 
 st.set_page_config(page_title="Challenge", page_icon=":soccer:", layout="wide")
 
-df = pd.read_excel("https://raw.githubusercontent.com/marcosallustio/streamlit/df.xlsx")
-df_no_filter = pd.read_excel("https://raw.githubusercontent.com/marcosallustio/streamlit/no_filter.xlsx")
-df_age = pd.read_excel("https://raw.githubusercontent.com/marcosallustio/streamlit/age.xlsx")
-df_value = pd.read_excel("https://raw.githubusercontent.com/marcosallustio/streamlit/value.xlsx")
-df_all = pd.read_excel("https://raw.githubusercontent.com/marcosallustio/streamlit/all.xlsx")
+df = pd.read_excel("https://github.com/marcosallustio/streamlit/raw/main/df.xlsx")
+df_no_filter = pd.read_excel("https://github.com/marcosallustio/streamlit/raw/main/no_filter.xlsx")
+df_age = pd.read_excel("https://github.com/marcosallustio/streamlit/raw/main/age.xlsx")
+df_value = pd.read_excel("https://github.com/marcosallustio/streamlit/raw/main/value.xlsx")
+df_all = pd.read_excel("https://github.com/marcosallustio/streamlit/raw/main/all.xlsx")
 
 df = df.drop('Unnamed: 0', axis=1, errors='ignore')
 df_no_filter = df_no_filter.drop(['Unnamed: 0', 'cluster'], axis=1, errors='ignore')
