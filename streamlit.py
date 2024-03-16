@@ -28,7 +28,7 @@ with st.expander("Info sul giocatore", expanded=True):
     col1, col2, col3, col4= st.columns(4)
     with col1:
          st.subheader("Francesco Acerbi")
-         st.image("/Users/sallu/Desktop/acerbi.png", width=200)
+         st.image("acerbi.png", width=200)
 
     with col2:
         st.write(f"**Posizione:** {specific_player_info['Pos']}")
