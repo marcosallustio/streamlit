@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 st.set_page_config(page_title="Challenge", page_icon=":soccer:", layout="wide")
 
-!pip install openpyxl
+pip install openpyxl
 
 df = pd.read_excel("https://github.com/marcosallustio/streamlit/raw/main/df.xlsx")
 df_no_filter = pd.read_excel("https://github.com/marcosallustio/streamlit/raw/main/no_filter.xlsx")
