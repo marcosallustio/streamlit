@@ -7,11 +7,11 @@ import matplotlib.pyplot as plt
 
 st.set_page_config(page_title="Challenge", page_icon=":soccer:", layout="wide")
 
-df = pd.read_excel("https://github.com/marcosallustio/streamlit/blob/main/df.xlsx")
-df_no_filter = pd.read_excel("https://github.com/marcosallustio/streamlit/blob/main/no_filter.xlsx")
-df_age = pd.read_excel("https://github.com/marcosallustio/streamlit/blob/main/age.xlsx")
-df_value = pd.read_excel("https://github.com/marcosallustio/streamlit/blob/main/value.xlsx")
-df_all = pd.read_excel("https://github.com/marcosallustio/streamlit/blob/main/all.xlsx")
+df = pd.read_excel("https://github.com/marcosallustio/streamlit/blob/main/df.xlsx", engine='openpyxl')
+df_no_filter = pd.read_excel("https://github.com/marcosallustio/streamlit/blob/main/no_filter.xlsx",engine='openpyxl')
+df_age = pd.read_excel("https://github.com/marcosallustio/streamlit/blob/main/age.xlsx",engine='openpyxl')
+df_value = pd.read_excel("https://github.com/marcosallustio/streamlit/blob/main/value.xlsx",engine='openpyxl')
+df_all = pd.read_excel("https://github.com/marcosallustio/streamlit/blob/main/all.xlsx",engine='openpyxl')
 
 df = df.drop('Unnamed: 0', axis=1, errors='ignore')
 df_no_filter = df_no_filter.drop(['Unnamed: 0', 'cluster'], axis=1, errors='ignore')
